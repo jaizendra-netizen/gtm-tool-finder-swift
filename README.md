@@ -1,0 +1,26 @@
+# GTMToolFinder
+
+Search the [OneGTMLab](https://www.onegtmlab.dev) GTM tool directory from Swift or the command line:
+
+- API reviews for 66 sales and marketing tools: pricing, rate limits, keys and MCP support
+- 99 head-to-head tool comparisons, such as Apollo vs Clay
+- 110 plain-English definitions of GTM terms
+
+```swift
+import GTMToolFinder
+
+for r in GTMToolFinder.search("enrichment", kind: "tool") {
+    print(r.name, r.url)
+}
+```
+
+```bash
+swift run gtm-tool-finder apollo
+swift run gtm-tool-finder clay --kind comparison
+```
+
+Install with CocoaPods (`pod 'GTMToolFinder'`) or Swift Package Manager.
+
+Every result links to the full page on [onegtmlab.dev/tool-directory](https://www.onegtmlab.dev/tool-directory). The list ships inside the package, so it works offline and sends no data anywhere.
+
+Built by [OneGTMLab](https://www.onegtmlab.dev), a GTM engineering agency. MIT licensed.
