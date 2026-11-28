@@ -1,0 +1,10 @@
+{
+  "name": "GTMToolFinder",
+  "description": "Search the OneGTMLab GTM tool directory offline from Swift (MIT)",
+  "sidebar": [
+    {
+      "title": "Overview",
+      "href": "/"
+    }
+  ]
+}
